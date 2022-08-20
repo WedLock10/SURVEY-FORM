@@ -1,0 +1,175 @@
+*{
+    padding:0;
+    margin:0;
+    font-size: montserrat;
+    box-sizing:border-box ;
+}
+
+/* styling the form container */
+form{
+    width:100%;
+    padding:20px 20px;
+    line-height:40px;
+    position:relative;  
+background-image: url("s.jpg");  
+background-size: cover; 
+min-height:100vh;
+}
+
+
+
+
+ h1{
+    letter-spacing:0.2px;
+    word-spacing:1.5px;
+    font-size:35px;
+    padding:10px 0px;
+    color:coral; 
+    font-weight: 600;
+}
+
+
+p, legend{
+padding-bottom: 5px;
+font-weight: 540;
+color: white;
+}
+
+
+p#sub{
+font-size: 15px;
+font-weight: 100;
+opacity: 70%;
+font-style: italic;
+}
+
+/* styling the form-control */
+.form-control{
+    text-align: left;
+
+}
+
+.form-control label{
+    display:block;
+    font-size:21px;
+    font-weight:100;
+    font-family:Verdana;
+    letter-spacing:0.4px;
+color: white;
+}
+
+/*    Styling the input, select and textarea */
+.form-control input,
+.form-control select,
+.form-control textarea{
+    font-family:inherit ;
+    border-radius: 2px ;
+    border:1px solid skyblue;
+    letter-spacing:0.4px;
+    padding:10px;
+    display:block;
+    width:50%;
+    
+}
+
+
+input, select, #age{
+margin-left: 1%;
+}
+
+.form-control input[type="number"]{
+width:8%;
+}
+
+
+#survey{
+width: 50%;
+}
+
+
+/* Styling radio and checkbox */
+.form-control input[type="radio"],
+.form-control input[type="checkbox"]{
+display: inline-block;
+padding: 15px;
+width: auto;
+}
+
+#occup{
+width: 20%;
+}
+
+#btn{
+margin-top: 2%;
+padding:12px 20px;
+background: orange;
+color: white;
+border-radius: 5px;
+width:15%;
+font-weight: 600;
+
+}
+
+#btn:hover{
+
+}
+
+
+/* media queries */
+
+@media(max-width: 500px){
+.form-control{
+     margin:auto;
+   }
+
+.form-control label{
+   font-size: 15px;
+  }
+
+h1{
+   font-size: 25px;
+   letter-spacing: -1px;
+}
+
+.form-control input,
+.form-control select,
+.form-control textarea{
+     width: 100%;
+   }
+#age{
+     width: 20%;
+  }
+#survey{
+     width: 70%;
+
+  }
+#btn{
+     width: 30%;
+  }
+#occup{
+     width:50%;
+  }
+}
+
+
+@media screen only(min-width: 480px){
+h1{
+   
+   letter-spacing: -1px;
+  }
+.form-control label{
+   font-size: 7px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

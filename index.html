@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" type="text/css" href="survey.css">
+        <title>NGR Survey Form</title> 
+    </head>
+    <body>
+            <!-- Fullname -->
+        <form action="process.php" id="Nform">
+        
+             </header>
+            <div class="form-control">
+             <h1>S-Tech Survey Form</h1>
+               <label for="name" id="mame-label">
+                   Name                  
+               </label>
+               <input type="text" id="name" placeholder="enter your full name" required /> 
+               
+            </div>
+            
+            <!--  Email -->  
+            <div class="form-control">
+               <label for="name" id="email-label">
+                   Email
+               </label>
+               <input type="email" id="email" placeholder="enter your email address" required />
+               
+            </div>
+            
+            <!-- Age-->
+            <div class="form-control">
+               <label for="name" id="age-label">
+                   Age
+                   
+               </label>
+<input type="number" id="age" placeholder="18+" min="18" max="100" required/>
+               
+            </div>
+            
+            <div class="form-control">
+                <label for="occup" id="occup-label">
+                    Occupation 
+                
+                
+                <!--Dropdown selection-->
+                <select name="occup" id="occup">
+                    <option value="student">Student only</option>
+                    <option value="Doctor">Doctor</option>
+                    <option value="Attorney">Lawyer</option>
+                    <option value="Engineer">Engineer</option>
+                    <option value="IT">IT Professional</option>
+                    <option value="Teacher">Teacher</option>
+                </select>
+                
+                </label>
+            </div>
+            
+            <!-- Answer a question -->
+            <div class="form-control" id="ch">
+            <legend>
+                Is your cellphone using now, the brand you want to buy?
+            </legend>
+               
+                <label for="ans-1">
+                    <input type="radio" id="ans-1" name="gadget" value="ans-1" checked>   
+                        Yes
+                </label>
+                    
+            
+                <label for="ans-2">
+                    <input type="radio" id="ans-2" name="gadget" value="ans-2">
+                        Maybe
+                </label>
+                
+        
+                <label for="ans-3">
+                     <input type="radio" id="ans-3" name="gadget" value="ans-3">
+                        No
+                </label>
+            </div>
+            
+            
+            <div class="form-control" id="ch">
+               
+                 <p>List of Phone Brands</p>
+                   <p id="sub">Check all the brands that you might like:</p>
+               
+               
+               <!-- Input Checkbox -->
+               
+                   <label for="check1">
+                   <input type="checkbox" id="check1" >
+                       
+                       Iphone
+                       
+                   </label>
+                   
+                   <label for="check2">
+                   <input type="checkbox" id="check2">
+                       
+                       Huawei
+                   </label>
+                   
+                   <label for="check3">
+                   <input type="checkbox" id="check3">
+                       
+                       Vivo
+                   </label>
+               
+                   <label for="check4">
+                    <input type="checkbox" id="check4">
+                       
+                       Oppo
+                   </label>  
+                   
+                   <label for="check5">
+                   <input type="checkbox" id="check5">
+                       Xiaomi
+                   </label>
+                   
+                
+                   <label for="check6">
+                   <input type="checkbox" id="check6">
+                       
+                       Realme
+                   </label>
+                   
+                
+                   <label for="check7">
+                   <input type="checkbox" id="check7">
+                       
+                       Infinix
+                   </label>
+                
+          
+                   <label for="check8">
+                   <input type="checkbox" id="check8">
+                       Samsung
+                   </label>
+            </div>
+            
+            <div class="form-control">
+                <label for="survey">
+                  <p>  In all your selected choices, what is the best phone brand for you?</p></label>
+            <textarea name="survey" id="survey" placeholder="please answer" required></textarea>
+            </div>
+            
+            <div class="form-control">
+            <!-- Submit -->
+            <input type="submit" id="btn" name="Submit">
+
+            </button>
+            </div>
+        </form>
+        
+    </body>
+</html>
